@@ -1,0 +1,167 @@
+:root {
+    --primary: #639bfc;
+    --white: #fff;
+    --black: #222;
+    --bgColor: #e3f2fd;
+    --danger: #721c24;
+    --danger-light: #f8d7da;
+    --gray: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background: var(--black);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 380px;
+    background: var(--white);
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    overflow: hidden;
+    display: block;
+    margin: 180px auto;
+    opacity: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 26px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+}
+
+.logo h1 {
+    font-size: 22px;
+}
+
+.close {
+    color: var(--primary);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+main {
+    height: 480px;
+    overflow: auto;
+    padding: 30px 20px 30px;
+}
+
+.message {
+    display: flex;
+}
+
+.message p {
+    max-width: 75%;
+    font-size: 15px;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.bot p {
+    color: var(--black);
+    background: var(--gray);
+}
+.bot p.error {
+    color: var(--danger);
+    background: var(--danger-light);
+}
+
+.bot i {
+    color: var(--primary);
+    align-self: center;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 10px 7px 0;
+}
+
+.user p {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.user {
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 12px 20px;
+    border-top: 1px solid var(--gray);
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: none;
+    padding: 8px 14px;
+    max-height: 180px;
+    background: var(--gray);
+    overflow-y: hidden;
+}
+
+.send-message {
+    align-self: center;
+    color: var(--primary);
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.toggler {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 150px;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggler i {
+    display: block;
+}
+
+.open-chat .container {
+    opacity: 1;
+}
+
+.open-chat .toggler i:first-child,
+.toggler i:last-child {
+    opacity: 0;
+}
+
+.open-chat .toggler i:last-child {
+    opacity: 1;
+}
