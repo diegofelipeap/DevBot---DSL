@@ -4,7 +4,7 @@
 Este é um Chatbot desenvolvido utilizando a API da OpenAI para geração de respostas baseadas em texto.
 
 <div align="center">
-<img src="https://github.com/diegofelipeap/DevBot---DSL/assets/78945288/9e25e9dd-4cfc-4a9b-9690-e64994b68efa" width="300px" />
+<img src="https://github.com/diegofelipeap/DevBot---DSL/assets/78945288/8cf0550a-d78e-4c5e-95e1-f9e779091b54" width="300px" />
 </div>
 
 
