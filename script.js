@@ -3,7 +3,7 @@ const initialTextareaHeight = textarea.scrollHeight
 
 async function createBotReply(content) {
     const API_URL = 'https://api.openai.com/v1/chat/completions'
-    const API_KEY = 'your_api_KEY'
+    const API_KEY = 'YOUR API KEY HERE'
 
     const response = await fetch(API_URL, {
         metrod: 'POST',
@@ -84,9 +84,11 @@ async function handleChat() {
         botMessage.querySelector('p').textContent = botReply
         messageHistory.scrollTo(0, messageHistory.scrollHeight)
     } catch (error) {
+        /*
+        Parte do código desativada temporariamente devido a chave API não estar em funcionamento.
         botMessage.querySelector('p').textContent = 'Ops, algo deu errado! Tente novamente.'
         botMessage.querySelector('p').classList.add('error')
-
+        */
     }
 
 }
