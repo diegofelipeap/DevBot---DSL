@@ -3,7 +3,7 @@ const initialTextareaHeight = textarea.scrollHeight
 
 async function createBotReply(content) {
     const API_URL = 'https://api.openai.com/v1/chat/completions'
-    const API_KEY = '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'
+    const API_KEY = 'your_api_KEY'
 
     const response = await fetch(API_URL, {
         metrod: 'POST',
@@ -49,7 +49,7 @@ function handleTogglerChat() {
     document.body.classList.toggle('open-chat')
 }
 
-function handleAutoSize(){
+function handleAutoSize() {
     textarea.style.height = `${initialTextareaHeight}px`
     textarea.style.height = `${textarea.scrollHeight}px`
 }
@@ -84,11 +84,9 @@ async function handleChat() {
         botMessage.querySelector('p').textContent = botReply
         messageHistory.scrollTo(0, messageHistory.scrollHeight)
     } catch (error) {
-        /*
-        Parte do código desabilitada devido a OpenAI não fornecer uso gratuito da API:
         botMessage.querySelector('p').textContent = 'Ops, algo deu errado! Tente novamente.'
         botMessage.querySelector('p').classList.add('error')
-         */
+
     }
 
 }
